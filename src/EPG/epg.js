@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ScrollView } from 'react-native';
 
 /**
  * The below const are not part of code. 
@@ -8,9 +8,12 @@ import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 const Channels = new Array(50).fill("C").map((ch, i) => { return { name: `Channel ${i + 1}`, stationId: `ST${i + 1}` } });
 const Shows = new Array(500).fill("S").map((sh, i) => { return { name: `Ch${parseInt(i / 10) + 1} Show ${Math.floor(((i + 1) / 1) % 10) === 0 ? 10 : Math.floor(((i + 1) / 1) % 10)}`, stationId: `ST${parseInt(i / 10) + 1}` } });
 
+const timeline = new Array(24).fill('i').map((i, x) => x).reduce((a, i) => [...a, i + ":00", i + ":30"], []);
+
 /************ */
 
 export default class EPG extends React.Component {
+  StickeyTimeline = null;
   state = {
     expandedChannel: null
   }
@@ -25,10 +28,14 @@ export default class EPG extends React.Component {
   _keyExtractor = (i, x) => i;
   render() {
     return (
-      <View style={{ backgroundColor: 'orange', flex: 1 }}>
+      <View style={{ backgroundColor: 'orange', flex: 1, position: 'relative' }}>
         <FlatList
           data={new Array(1).fill('Parent FlatList')}
           keyExtractor={this._keyExtractor}
+          ListHeaderComponent={
+            <StickeyTimeline ref={st => { this.StickeyTimeline = st }} />
+          }
+          stickyHeaderIndices={[0]}
           renderItem={
             () => (
               <React.Fragment>
@@ -41,20 +48,23 @@ export default class EPG extends React.Component {
                       this.expandChannel(null);
                     }
                     this.childScrollOffset = nativeEvent.contentOffset.x;
+                    this.StickeyTimeline.updatetimeLine(Math.round(this.childScrollOffset));
                   }}
                   renderItem={
                     () => (
-                      <View style={{ flex: 1, paddingLeft: 135 }}>
-                        {
-                          Channels.map(ch => (
-                            <ChannelRow name={ch.name} key={ch.name} shows={Shows.filter(sh => sh.stationId === ch.stationId)} expand={ch.name === this.state.expandedChannel} onPress={() => { this.expandChannel(ch.name) }} horizontalOffset={() => this.horizontalScrollOffset} />
-                          ))
-                        }
-                      </View>
+                      <React.Fragment>
+                        <View style={{ flex: 1, paddingLeft: 135 }}>
+                          {
+                            Channels.map(ch => (
+                              <ChannelRow name={ch.name} key={ch.name} shows={Shows.filter(sh => sh.stationId === ch.stationId)} expand={ch.name === this.state.expandedChannel} onPress={() => { this.expandChannel(ch.name) }} horizontalOffset={() => this.horizontalScrollOffset} />
+                            ))
+                          }
+                        </View>
+                      </React.Fragment>
                     )
                   }
                 />
-                <View style={{ position: 'absolute', width: 135, top: 0, left: 0 }}>
+                <View style={{ position: 'absolute', width: 135, top: 25, left: 0 }}>
                   {
                     Channels.map(ch => (
                       <ChannelCell name={ch.name} key={ch.name} expand={ch.name === this.state.expandedChannel} />
@@ -65,6 +75,31 @@ export default class EPG extends React.Component {
             )
           }
         />
+      </View>
+    )
+  }
+}
+
+class StickeyTimeline extends React.Component {
+  scrollView = null;
+  updatetimeLine = (xPos) => {
+    this.scrollView.scrollTo({ x: xPos, y: 0, animated: false })
+  }
+  render() {
+    return (
+      <View style={{ marginLeft: 135, position: 'relative', width: '100%', backgroundColor: 'orange', width: '100%', height: 25 }}>
+        <ScrollView
+          ref={(sv) => { this.scrollView = sv }}
+          horizontal
+        >
+          {
+            timeline.map(t => (
+              <View style={{ backgroundColor: 'teal', width: 500, height: 25, marginHorizontal: 5, justifyContent: 'center', alignItems: 'center' }} key={t}>
+                <Text style={{ color: 'white', fontSize: 14 }}>{t}</Text>
+              </View>
+            ))
+          }
+        </ScrollView>
       </View>
     )
   }
