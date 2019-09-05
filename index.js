@@ -25,20 +25,14 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <GScrollView style={{ height: '100%', width: Dimensions.get('window').width }} >
-          {/* {
-              new Array(100).fill("i").map((i, x) => (
-                <EPGCell style={{ width: 135, height: 50, margin: 5 }} showName={'show ' + x} key={x} />
-              ))
-            } */}
           <GHorizontalLayout>
             {
-              new Array(71).fill("i").map((i, x) => (
+              new Array(75).fill("i").map((i, x) => (
                 <EPGCell style={{ width: 135, height: 50, margin: 5 }} showName={'show ' + x} key={x} />
               ))
             }
           </GHorizontalLayout>
         </GScrollView>
-        {/* <EPGCell style={{ width: 100, height: 100 }} showName="Godwin"/> */}
       </React.Fragment>
     )
   }
