@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "epg_poc.app"
-               BlueprintName = "epg_poc"
-               ReferencedContainer = "container:epg_poc.xcodeproj">
+               BuildableName = "EPG_POC.app"
+               BlueprintName = "EPG_POC"
+               ReferencedContainer = "container:EPG_POC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "epg_pocTests.xctest"
-               BlueprintName = "epg_pocTests"
-               ReferencedContainer = "container:epg_poc.xcodeproj">
+               BuildableName = "EPG_POCTests.xctest"
+               BlueprintName = "EPG_POCTests"
+               ReferencedContainer = "container:EPG_POC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "epg_pocTests.xctest"
-               BlueprintName = "epg_pocTests"
-               ReferencedContainer = "container:epg_poc.xcodeproj">
+               BuildableName = "EPG_POCTests.xctest"
+               BlueprintName = "EPG_POCTests"
+               ReferencedContainer = "container:EPG_POC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "epg_poc.app"
-            BlueprintName = "epg_poc"
-            ReferencedContainer = "container:epg_poc.xcodeproj">
+            BuildableName = "EPG_POC.app"
+            BlueprintName = "EPG_POC"
+            ReferencedContainer = "container:EPG_POC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "epg_poc.app"
-            BlueprintName = "epg_poc"
-            ReferencedContainer = "container:epg_poc.xcodeproj">
+            BuildableName = "EPG_POC.app"
+            BlueprintName = "EPG_POC"
+            ReferencedContainer = "container:EPG_POC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "epg_poc.app"
-            BlueprintName = "epg_poc"
-            ReferencedContainer = "container:epg_poc.xcodeproj">
+            BuildableName = "EPG_POC.app"
+            BlueprintName = "EPG_POC"
+            ReferencedContainer = "container:EPG_POC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

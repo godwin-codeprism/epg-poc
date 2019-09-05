@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React Native!"
 
-@interface epg_pocTests : XCTestCase
+@interface EPG_POCTests : XCTestCase
 
 @end
 
-@implementation epg_pocTests
+@implementation EPG_POCTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

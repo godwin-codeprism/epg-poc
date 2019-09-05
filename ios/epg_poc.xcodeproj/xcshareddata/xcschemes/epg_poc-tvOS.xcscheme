@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "epg_poc-tvOS.app"
-               BlueprintName = "epg_poc-tvOS"
-               ReferencedContainer = "container:epg_poc.xcodeproj">
+               BuildableName = "EPG_POC-tvOS.app"
+               BlueprintName = "EPG_POC-tvOS"
+               ReferencedContainer = "container:EPG_POC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "epg_poc-tvOSTests.xctest"
-               BlueprintName = "epg_poc-tvOSTests"
-               ReferencedContainer = "container:epg_poc.xcodeproj">
+               BuildableName = "EPG_POC-tvOSTests.xctest"
+               BlueprintName = "EPG_POC-tvOSTests"
+               ReferencedContainer = "container:EPG_POC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "epg_poc-tvOSTests.xctest"
-               BlueprintName = "epg_poc-tvOSTests"
-               ReferencedContainer = "container:epg_poc.xcodeproj">
+               BuildableName = "EPG_POC-tvOSTests.xctest"
+               BlueprintName = "EPG_POC-tvOSTests"
+               ReferencedContainer = "container:EPG_POC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "epg_poc-tvOS.app"
-            BlueprintName = "epg_poc-tvOS"
-            ReferencedContainer = "container:epg_poc.xcodeproj">
+            BuildableName = "EPG_POC-tvOS.app"
+            BlueprintName = "EPG_POC-tvOS"
+            ReferencedContainer = "container:EPG_POC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "epg_poc-tvOS.app"
-            BlueprintName = "epg_poc-tvOS"
-            ReferencedContainer = "container:epg_poc.xcodeproj">
+            BuildableName = "EPG_POC-tvOS.app"
+            BlueprintName = "EPG_POC-tvOS"
+            ReferencedContainer = "container:EPG_POC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "epg_poc-tvOS.app"
-            BlueprintName = "epg_poc-tvOS"
-            ReferencedContainer = "container:epg_poc.xcodeproj">
+            BuildableName = "EPG_POC-tvOS.app"
+            BlueprintName = "EPG_POC-tvOS"
+            ReferencedContainer = "container:EPG_POC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
